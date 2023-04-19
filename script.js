@@ -9,7 +9,7 @@ const arrList = [
 
 const eleList = document.querySelector('#list');
 
-i = 0 ;
+let i = 0 ;
 
 while (i < arrList.lenght) {
     console.log(arrList[i]);
