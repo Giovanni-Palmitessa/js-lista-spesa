@@ -7,7 +7,7 @@ const arrList = [
     'pesce'
 ]
 
-const eleList = document.getElementById('#list');
+const eleList = document.querySelector('#list');
 
 i = 0 ;
 
