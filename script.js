@@ -9,10 +9,23 @@ const arrList = [
 
 const eleList = document.querySelector('#list');
 
-let i = 0 ;
+const eleBtn = document.querySelector('#add');
 
-while (i < arrList.lenght) {
+
+let i = 0 ;
+while (i < arrList.length) {
     console.log(arrList[i]);
     eleList.innerHTML += `<li>${arrList[i]}</li>`;
     i++
 }
+
+let addToList = document.querySelector('#input-add');
+
+eleBtn.addEventListener ('click', function () {
+    addToList = document.getElementById('input-add').value;
+    console.log(addToList);
+
+    arrList.push(addToList)
+
+    eleList.innerHTML += `<li>${addToList}</li>`;
+})
