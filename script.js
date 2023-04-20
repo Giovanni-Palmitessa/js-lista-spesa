@@ -23,6 +23,7 @@ let addToList = document.querySelector('#input-add');
 
 eleBtn.addEventListener ('click', function () {
     addToList = document.getElementById('input-add').value;
+    addToList = addToList.trim();
     console.log(addToList);
 
     arrList.push(addToList)
